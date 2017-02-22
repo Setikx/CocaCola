@@ -565,6 +565,9 @@ article {
   text-align: left;
   line-height: 2.1;
 }
+.container_co-worker-1 .co-workers-gallery {
+  height: 50%;
+}
 .container_co-worker-1 .video-1 {
   height: 1080px;
   overflow: hidden;
