@@ -30,6 +30,12 @@ article {
   background-image: url("../../theme/images/bg/training_people.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+
+  &:before {
+    @include oneline-sprite-box($icons, arrow);
+    @include pseudo-block($bottom: 5.6%, $right: 47.8%);
+  }
 
   p:first-child {
     color: red;
