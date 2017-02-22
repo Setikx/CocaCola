@@ -7,7 +7,7 @@ javascripts_dir = "theme/js"
 
 line_comments = FALSE
 environment = :development
-output_style = :expanded
+output_style = :compressed
 # To enable relative paths to assets via compass helper functions. Uncomment:
 relative_assets = true
 asset_cache_buster :none

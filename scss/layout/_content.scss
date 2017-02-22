@@ -13,6 +13,7 @@ aside {
   height: 100%;
   position: fixed;
   background-color: red;
+  z-index: 10;
 }
 
 article {
@@ -23,14 +24,20 @@ article {
   font-family: 'MuseoSansCyrl-300';
 }
 
+.container{
+  background-color: #fff;
+  position: relative;
+}
+
 .top-container {
   text-align: center;
-  height: 1080px;
   padding-top: 58px;
   background-image: url("../../theme/images/bg/training_people.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  position: fixed;
+  height: 100vh;
+  width:100vw;
 
   &:before {
     @include oneline-sprite-box($icons, arrow);
@@ -57,12 +64,19 @@ article {
   }
 }
 
+.container_co-worker-1,
+.container_co-worker-2,
+.container_co-worker-3 {
+  @include translateY(100vh);
+}
+
 .container_co-worker-1  {
+
 
   .desc-block {
     display: inline-block;
     width: 206px;
-    height: 1080px;
+    height: 100vh;
     color: #000000;
     padding-top: 43px;
     padding-left: 24%;
@@ -102,6 +116,7 @@ article {
         color: white;
         text-align: left;
         line-height: 2.1;
+        animation-delay: 1s;
       }
     }
   }
