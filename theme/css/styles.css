@@ -657,3 +657,118 @@ article {
   text-align: left;
   line-height: 2.0;
 }
+
+.el-with-animation {
+  -moz-transition: opacity 1s, -moz-transform 1s;
+  -o-transition: opacity 1s, -o-transform 1s;
+  -webkit-transition: opacity 1s, -webkit-transform 1s;
+  transition: opacity 1s, transform 1s;
+}
+.el-with-animation.animate-opacity {
+  opacity: 0;
+}
+.el-with-animation.animate-up-to-down {
+  -moz-transform: translate(0, -100px);
+  -ms-transform: translate(0, -100px);
+  -webkit-transform: translate(0, -100px);
+  transform: translate(0, -100px);
+}
+.el-with-animation.animate-up-to-down.animate-zoom-in {
+  -moz-transform: translate(0, -100px) scale(0.7);
+  -ms-transform: translate(0, -100px) scale(0.7);
+  -webkit-transform: translate(0, -100px) scale(0.7);
+  transform: translate(0, -100px) scale(0.7);
+}
+.el-with-animation.animate-up-to-down.animate-zoom-out {
+  -moz-transform: translate(0, -100px) scale(1.25);
+  -ms-transform: translate(0, -100px) scale(1.25);
+  -webkit-transform: translate(0, -100px) scale(1.25);
+  transform: translate(0, -100px) scale(1.25);
+}
+.el-with-animation.animate-down-to-up {
+  -moz-transform: translate(0, 100px);
+  -ms-transform: translate(0, 100px);
+  -webkit-transform: translate(0, 100px);
+  transform: translate(0, 100px);
+}
+.el-with-animation.animate-down-to-up.animate-zoom-in {
+  -moz-transform: translate(0, 100px) scale(0.7);
+  -ms-transform: translate(0, 100px) scale(0.7);
+  -webkit-transform: translate(0, 100px) scale(0.7);
+  transform: translate(0, 100px) scale(0.7);
+}
+.el-with-animation.animate-down-to-up.animate-zoom-out {
+  -moz-transform: translate(0, 100px) scale(1.25);
+  -ms-transform: translate(0, 100px) scale(1.25);
+  -webkit-transform: translate(0, 100px) scale(1.25);
+  transform: translate(0, 100px) scale(1.25);
+}
+.el-with-animation.animate-right-to-left {
+  -moz-transform: translate(30px, 0);
+  -ms-transform: translate(30px, 0);
+  -webkit-transform: translate(30px, 0);
+  transform: translate(30px, 0);
+}
+.el-with-animation.animate-right-to-left.animate-zoom-in {
+  -moz-transform: translate(30px, 0) scale(0.7);
+  -ms-transform: translate(30px, 0) scale(0.7);
+  -webkit-transform: translate(30px, 0) scale(0.7);
+  transform: translate(30px, 0) scale(0.7);
+}
+.el-with-animation.animate-right-to-left.animate-zoom-out {
+  -moz-transform: translate(30px, 0) scale(1.25);
+  -ms-transform: translate(30px, 0) scale(1.25);
+  -webkit-transform: translate(30px, 0) scale(1.25);
+  transform: translate(30px, 0) scale(1.25);
+}
+.el-with-animation.animate-left-to-right {
+  -moz-transform: translate(-30px, 0);
+  -ms-transform: translate(-30px, 0);
+  -webkit-transform: translate(-30px, 0);
+  transform: translate(-30px, 0);
+}
+.el-with-animation.animate-left-to-right.animate-zoom-in {
+  -moz-transform: translate(-30px, 0) scale(0.7);
+  -ms-transform: translate(-30px, 0) scale(0.7);
+  -webkit-transform: translate(-30px, 0) scale(0.7);
+  transform: translate(-30px, 0) scale(0.7);
+}
+.el-with-animation.animate-left-to-right.animate-zoom-out {
+  -moz-transform: translate(-30px, 0) scale(1.25);
+  -ms-transform: translate(-30px, 0) scale(1.25);
+  -webkit-transform: translate(-30px, 0) scale(1.25);
+  transform: translate(-30px, 0) scale(1.25);
+}
+.el-with-animation.animate-zoom-in {
+  -moz-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  -webkit-transform: scale(0.7);
+  transform: scale(0.7);
+}
+.el-with-animation.animate-zoom-out {
+  -moz-transform: scale(1.25);
+  -ms-transform: scale(1.25);
+  -webkit-transform: scale(1.25);
+  transform: scale(1.25);
+}
+.el-with-animation.animating-end.animate-opacity {
+  opacity: 1;
+}
+.el-with-animation.animating-end.animate-up-to-down, .el-with-animation.animating-end.animate-down-to-up, .el-with-animation.animating-end.animate-right-to-left, .el-with-animation.animating-end.animate-left-to-right {
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.el-with-animation.animating-end.animate-up-to-down.animate-zoom-in, .el-with-animation.animating-end.animate-up-to-down.animate-zoom-out, .el-with-animation.animating-end.animate-down-to-up.animate-zoom-in, .el-with-animation.animating-end.animate-down-to-up.animate-zoom-out, .el-with-animation.animating-end.animate-right-to-left.animate-zoom-in, .el-with-animation.animating-end.animate-right-to-left.animate-zoom-out, .el-with-animation.animating-end.animate-left-to-right.animate-zoom-in, .el-with-animation.animating-end.animate-left-to-right.animate-zoom-out {
+  -moz-transform: translate(0, 0) scale(1);
+  -ms-transform: translate(0, 0) scale(1);
+  -webkit-transform: translate(0, 0) scale(1);
+  transform: translate(0, 0) scale(1);
+}
+.el-with-animation.animating-end.animate-zoom-in, .el-with-animation.animating-end.animate-zoom-out {
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
