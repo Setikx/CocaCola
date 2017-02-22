@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+aside {
+  width: 96px;
+  height: 100%;
+  position: fixed;
+  background-color: red;
+}
+
+article {
+  min-width: 940px;
+  margin-left: 96px;
+  color: white;
+  font-size: 16px;
+  font-family: 'MuseoSansCyrl-300';
+}
+
+.top-container {
+  text-align: center;
+  height: 1080px;
+  padding-top: 58px;
+  background-image: url("../../theme/images/bg/training_people.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  p:first-child {
+    color: red;
+    font-size: 29px;
+    margin-right: 16px;
+    font-family: 'FedraSansPro-Normal';
+  }
+  h1 {
+    width: 550px;
+    margin: 24px auto 0 auto;
+    font-size: 66px;
+    line-height: 115%;
+  }
+  p:last-child {
+    margin: 4px auto 0 auto;
+    width: 840px;
+    font-size: 23px;
+    line-height: 150%;
+  }
+}
+
+.container_co-worker-1  {
+  padding-left: 24%;
+  padding-right: 50%;
+
+  .desc-block {
+    width: 200px;
+    color: #000000;
+    padding-top: 43px;
+    text-align: right;
+
+    h2 {
+      font-size: 44px;
+    }
+  }
+}
+
+h2 {
+  quotes: "\00ab" "\00bb";
+  color: #000000;
+}
