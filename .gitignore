@@ -1,0 +1,10 @@
+# Ignore paths that contain user-generated content.
+trunk/sites/default/files
+trunk/sites/default/settings.php
+.sass-cache
+.idea
+trunk/slice
+trunk/slice-mobile
+trunk/robots.txt
+.DS_Store
+trunk/.htaccess
