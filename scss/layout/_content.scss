@@ -16,7 +16,7 @@ aside {
   z-index: 10;
 }
 
-article {
+.wrapper {
   min-width: 940px;
   margin-left: 96px;
   color: white;
@@ -24,7 +24,7 @@ article {
   font-family: 'MuseoSansCyrl-300';
 }
 
-.container{
+.section{
   background-color: #fff;
   position: relative;
 }
@@ -72,50 +72,51 @@ article {
 
 .container_co-worker-1  {
 
-
-  .desc-block {
-    display: inline-block;
-    width: 206px;
-    height: 100vh;
-    color: #000000;
-    padding-top: 43px;
-    padding-left: 24%;
-    text-align: right;
+  .content {
+    width: 990px;
+    margin: 0 auto;
     position: relative;
 
-    h2 {
-      width: 206px;
-      font-size: 44px;
-      line-height: 1.1;
-    }
+    .left-part {
+      display: inline-block;
+      height: 100vh;
+      color: #000000;
+      padding-top: 43px;
+      text-align: right;
 
-    .co-workers-photo {
-      margin-top: 53px;
-      margin-left: 74px;
-    }
+      h2 {
+        width: 206px;
+        font-size: 44px;
+        line-height: 1.1;
+      }
 
-    .co-worker_name {
-      margin-top: 28px;
-      padding-left: 70px;
-      line-height: 1.32;
-      width: 206px;
-    }
+      .co-workers-photo {
+        margin-top: 53px;
+        margin-left: 74px;
+      }
 
-    .co-workers-story {
+      .co-worker_name {
+        margin-top: 28px;
+        padding-left: 70px;
+        line-height: 1.32;
+        width: 206px;
+
+      }
+    }
+    .right-part {
       background-color: red;
       width: 703px;
       padding: 44px 64px 50px 64px;
       position: absolute;
       top: 0;
-      left: 162.3%;
+      left: 295px;
       margin: 0;
       font-size: 20px;
-
+      color: white;
+      text-align: left;
+      line-height: 2.1;
 
       p {
-        color: white;
-        text-align: left;
-        line-height: 2.1;
         animation-delay: 1s;
       }
     }
