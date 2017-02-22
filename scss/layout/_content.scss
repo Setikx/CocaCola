@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+strong {
+  color: black;
+}
+
 aside {
   width: 96px;
   height: 100%;
@@ -78,7 +82,7 @@ article {
     .co-workers-story {
       background-color: red;
       width: 703px;
-      padding: 62px;
+      padding: 44px 64px 50px 64px;
       position: absolute;
       top: 0;
       left: 162.3%;
@@ -86,12 +90,14 @@ article {
       font-size: 20px;
       color: white;
       text-align: left;
-      line-height: 1.9;
+      line-height: 2.1;
     }
   }
 
   .video-1 {
-    margin-top: 240px;
+    margin-top: 232px;
+    height: 1080px;
+    overflow: hidden;
 
     img {
       width: 100%;
@@ -99,3 +105,99 @@ article {
   }
 }
 
+
+.container_co-worker-2  {
+  text-align: right;
+
+  .desc-block {
+    display: inline-block;
+    width: 206px;
+    color: #000000;
+    padding-top: 43px;
+    padding-right: 38%;
+    text-align: left;
+    position: relative;
+
+    h2 {
+      width: 420px;
+      font-size: 44px;
+      line-height: 1.1;
+    }
+
+    .co-workers-photo {
+      margin-top: 97px;
+    }
+
+    p {
+      margin-top: 28px;
+      line-height: 1.32;
+      width: 195px;
+    }
+
+    .co-workers-story {
+      background-color: red;
+      width: 703px;
+      padding: 44px 64px 43px 64px;
+      position: absolute;
+      top: 0;
+      right: 105%;
+      margin: 0;
+      font-size: 20px;
+      color: white;
+      text-align: left;
+      line-height: 1.96;
+    }
+  }
+
+  .bg-block {
+    height: 1080px;
+    margin-top: 365px;
+    background-image: url('../../theme/images/bg/running_people.jpg');
+  }
+}
+
+
+.container_co-worker-3 {
+
+  .desc-block {
+    width: 206px;
+    color: #000000;
+    padding-top: 43px;
+    padding-left: 20%;
+    text-align: right;
+    position: relative;
+
+    h2 {
+      width: 308px;
+      padding-right: 32px;
+      font-size: 44px;
+      line-height: 1.1;
+    }
+
+    .co-workers-photo {
+      margin-top: 53px;
+      padding-left: 147px;
+    }
+
+    p {
+      margin-top: 28px;
+      padding-left: 166px;
+      line-height: 1.5;
+      width: 277px;
+    }
+
+    .co-workers-story {
+      background-color: red;
+      width: 703px;
+      padding: 44px 64px 50px 64px;
+      position: absolute;
+      top: 0;
+      left: 195%;
+      margin: 0;
+      font-size: 20px;
+      color: white;
+      text-align: left;
+      line-height: 2.0;
+    }
+  }
+}
