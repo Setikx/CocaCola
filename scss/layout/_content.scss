@@ -1,3 +1,7 @@
+html, body{
+  height: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -79,7 +83,7 @@ aside {
 
     .left-part {
       display: inline-block;
-      height: 100vh;
+      height: 50vh;
       color: #000000;
       padding-top: 43px;
       text-align: right;
@@ -100,7 +104,6 @@ aside {
         padding-left: 70px;
         line-height: 1.32;
         width: 206px;
-
       }
     }
     .right-part {
@@ -117,19 +120,26 @@ aside {
       line-height: 2.1;
 
       p {
-        animation-delay: 1s;
+       // animation-delay: 1s;
       }
     }
   }
 
   .co-workers-gallery {
-    height: 50%;
+    height: 50vh;
+    @include clearfix();
+
+    img {
+      float: left;
+        &:last-child {
+        float: right;
+     }
+    }
 
   }
 
   .video-1 {
     height: 1080px;
-    overflow: hidden;
 
     img {
       width: 100%;
@@ -141,95 +151,114 @@ aside {
 .container_co-worker-2  {
   text-align: right;
 
-  .desc-block {
-    display: inline-block;
-    width: 206px;
-    color: #000000;
-    padding-top: 43px;
-    padding-right: 38%;
-    text-align: left;
+  .content {
+    width: 970px;
+    margin: 0 auto;
     position: relative;
 
-    h2 {
-      width: 420px;
-      font-size: 44px;
-      line-height: 1.1;
+    .right-part {
+      display: inline-block;
+      width: 206px;
+      color: #000000;
+      padding-top: 43px;
+      padding-right: 27%;
+      text-align: left;
+      position: relative;
+
+      h2 {
+        width: 420px;
+        font-size: 44px;
+        line-height: 1.1;
+      }
+
+      .co-workers-photo {
+        margin-top: 97px;
+      }
+
+      p {
+        margin-top: 28px;
+        line-height: 1.32;
+        width: 195px;
+      }
     }
 
-    .co-workers-photo {
-      margin-top: 97px;
-    }
-
-    p {
-      margin-top: 28px;
-      line-height: 1.32;
-      width: 195px;
-    }
-
-    .co-workers-story {
+    .left-part {
       background-color: red;
       width: 703px;
       padding: 44px 64px 43px 64px;
       position: absolute;
       top: 0;
-      right: 105%;
+      right: 302px;
       margin: 0;
       font-size: 20px;
       color: white;
       text-align: left;
       line-height: 1.96;
+      z-index: 2;
+
+      .p {
+       // animation-delay: 1s;
+      }
     }
   }
 
   .bg-block {
-    height: 1080px;
     margin-top: 365px;
-    background-image: url('../../theme/images/bg/running_people.jpg');
+
+    img {
+      transform: scale(1.007);
+    }
   }
 }
 
 
 .container_co-worker-3 {
-
-  .desc-block {
-    width: 206px;
-    color: #000000;
-    padding-top: 43px;
-    padding-left: 20%;
-    text-align: right;
+  .content {
+    width: 1020px;
+    margin: 0 auto;
     position: relative;
 
-    h2 {
-      width: 308px;
-      padding-right: 32px;
-      font-size: 44px;
-      line-height: 1.1;
+    .left-part {
+      display: inline-block;
+      height: 100vh;
+      width: 210px;
+      color: #000000;
+      padding-top: 43px;
+      text-align: right;
+
+      h2 {
+        width: 210px;
+        font-size: 44px;
+        line-height: 1.1;
+      }
+
+      .co-workers-photo {
+        margin-top: 53px;
+      }
+
+      p {
+        margin-top: 28px;
+        padding-left: 100px;
+        line-height: 1.32;
+      }
     }
 
-    .co-workers-photo {
-      margin-top: 53px;
-      padding-left: 147px;
-    }
-
-    p {
-      margin-top: 28px;
-      padding-left: 166px;
-      line-height: 1.5;
-      width: 277px;
-    }
-
-    .co-workers-story {
+    .right-part {
       background-color: red;
       width: 703px;
       padding: 44px 64px 50px 64px;
       position: absolute;
       top: 0;
-      left: 195%;
+      left: 295px;
       margin: 0;
       font-size: 20px;
       color: white;
       text-align: left;
       line-height: 2.0;
+
+      p {
+       // animation-delay: 1s;
+      }
     }
   }
 }
