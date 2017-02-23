@@ -3,6 +3,7 @@
 $(window).load(function(){
  // initElmsAnimation();
   WowInit();
+  slickTwoinit();
 });
 
   function initElmsAnimation() {
@@ -32,6 +33,14 @@ $(window).load(function(){
 
   function WowInit(){
     new WOW().init();
+  }
+
+  function slickTwoinit(){
+    $('.slick-slider.two-img').slick({
+      lazyLoad: 'ondemand',
+      slidesToShow: 2,
+      slidesToScroll: 1
+    });
   }
 
 })(jQuery);
