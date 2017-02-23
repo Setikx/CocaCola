@@ -2,7 +2,7 @@
 
 $(window).load(function(){
  // initElmsAnimation();
-  name();
+  WowInit();
 });
 
   function initElmsAnimation() {
@@ -30,8 +30,8 @@ $(window).load(function(){
     }
   }
 
-  function name(){
-
+  function WowInit(){
+    new WOW().init();
   }
 
 })(jQuery);
