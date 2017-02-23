@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <list default="true" id="aad9bd2e-9f06-46e9-aece-67de72c4367f" name="Default" comment="">
 =======
     <list default="true" id="6f4e2c2c-6900-4162-a99b-a8eb74728819" name="Default" comment="">
@@ -10,6 +11,9 @@
 >>>>>>> 6d6edf8b0e2003c6bdc7a96177b59a502dc7aba4
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
+=======
+    <list default="true" id="6f4e2c2c-6900-4162-a99b-a8eb74728819" name="Default" comment="" />
+>>>>>>> dda0f5f486df305f3bdf8323e24b7025e0daf350
     <ignored path="Compass.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -35,9 +39,10 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
                 <state vertical-scroll-proportion="0.5425532">
                   <caret line="27" column="55" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
@@ -63,6 +68,9 @@
                   <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
 =======
                 <state vertical-scroll-proportion="0.55263156" vertical-offset="25" max-vertical-offset="1853">
+=======
+                <state vertical-scroll-proportion="-12.115385" vertical-offset="25" max-vertical-offset="1853">
+>>>>>>> dda0f5f486df305f3bdf8323e24b7025e0daf350
                   <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
 >>>>>>> 6d6edf8b0e2003c6bdc7a96177b59a502dc7aba4
                   <folding />
@@ -70,10 +78,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="js.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="js.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/theme/js/js.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="782">
+                <state vertical-scroll-proportion="0.88422817" vertical-offset="0" max-vertical-offset="782">
                   <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
                   <folding />
                 </state>
@@ -380,7 +388,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21614583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21614583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32805908" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -817,8 +825,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/theme/js/js.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <state vertical-scroll-proportion="-23.925926">
           <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
@@ -834,12 +843,17 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="782">
           <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
 >>>>>>> 6d6edf8b0e2003c6bdc7a96177b59a502dc7aba4
+=======
+        <state vertical-scroll-proportion="-12.115385" vertical-offset="25" max-vertical-offset="1853">
+          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+>>>>>>> dda0f5f486df305f3bdf8323e24b7025e0daf350
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/theme/js/js.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <state vertical-scroll-proportion="0.5425532">
           <caret line="27" column="55" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
@@ -847,6 +861,10 @@
         <state vertical-scroll-proportion="0.55263156" vertical-offset="25" max-vertical-offset="1853">
           <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
 >>>>>>> 6d6edf8b0e2003c6bdc7a96177b59a502dc7aba4
+=======
+        <state vertical-scroll-proportion="0.88422817" vertical-offset="0" max-vertical-offset="782">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+>>>>>>> dda0f5f486df305f3bdf8323e24b7025e0daf350
           <folding />
         </state>
       </provider>
