@@ -126,16 +126,18 @@ aside {
   }
 
   .co-workers-gallery {
-    height: 50vh;
+    height: 50%;
     @include clearfix();
 
-    img {
+    .item {
+      overflow: hidden;
       float: left;
-        &:last-child {
-        float: right;
-     }
-    }
+      font-size: 0;
 
+      &:last-child {
+        float: right;
+      }
+    }
   }
 
   .video-1 {
