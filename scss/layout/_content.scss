@@ -1,12 +1,10 @@
-
 /* <div class="co-workers-gallery">
 <div class="item-1 item"><img src="theme/images/tmp/co-worker-1_photo-1.jpg" alt="co-worker_1-photo_1"></div>
 <div class="item-2 item"><img src="theme/images/tmp/co-worker-1_photo-2.JPG" alt="co-worker_1-photo_2"></div>
 <div class="item-3 item"><img src="theme/images/tmp/co-worker-1_photo-3.JPG" alt="co-worker_1-photo_3"></div>
 </div> */
 
-
-html, body{
+html, body {
   height: 100%;
 }
 
@@ -36,7 +34,7 @@ aside {
   font-family: 'MuseoSansCyrl-300';
 }
 
-.section{
+.section {
   background-color: #fff;
   position: relative;
 }
@@ -49,7 +47,7 @@ aside {
   background-size: cover;
   position: fixed;
   height: 100vh;
-  width:100vw;
+  width: 100vw;
 
   &:before {
     @include oneline-sprite-box($icons, arrow);
@@ -82,7 +80,7 @@ aside {
   @include translateY(100vh);
 }
 
-.container_co-worker-1  {
+.container_co-worker-1 {
 
   .content {
     width: 990px;
@@ -129,7 +127,7 @@ aside {
       z-index: 2;
 
       p {
-       // animation-delay: 1s;
+        // animation-delay: 1s;
       }
     }
   }
@@ -158,9 +156,7 @@ aside {
   }
 }
 
-
-
-.container_co-worker-2  {
+.container_co-worker-2 {
   text-align: right;
 
   .content {
@@ -209,7 +205,7 @@ aside {
       z-index: 2;
 
       .p {
-       // animation-delay: 1s;
+        // animation-delay: 1s;
       }
     }
   }
@@ -222,7 +218,6 @@ aside {
     }
   }
 }
-
 
 .container_co-worker-3 {
   .content {
@@ -269,8 +264,18 @@ aside {
       line-height: 2.0;
 
       p {
-       // animation-delay: 1s;
+        // animation-delay: 1s;
       }
     }
+  }
+}
+
+.slick-slider {
+  width: 37vw;
+  max-height: 50vh;
+  overflow: hidden;
+
+  img {
+    min-width: 100%;
   }
 }
