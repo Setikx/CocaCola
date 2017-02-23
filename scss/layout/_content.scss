@@ -110,8 +110,15 @@ aside {
         padding-left: 70px;
         line-height: 1.32;
         width: 206px;
+        @include transition( padding-left 1s);
+
+        &.animating-end {
+          padding-left: 0;
+          visibility: visible;
+        }
       }
     }
+
     .right-part {
       background-color: red;
       width: 703px;
@@ -274,6 +281,14 @@ aside {
   width: 37vw;
   max-height: 50vh;
   overflow: hidden;
+
+  &.two-img{
+    float: left;
+  }
+
+  &.one-img{
+    float: right;
+  }
 
   img {
     min-width: 100%;
