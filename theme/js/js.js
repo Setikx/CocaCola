@@ -60,7 +60,10 @@
       slidesToShow: 2,
       autoplay: true,
       autoplaySpeed: 3000,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      arrows: false,
+      pauseOnFocus: false,
+      pauseOnHover: false
     });
   }
 
@@ -70,7 +73,10 @@
       slidesToShow: 1,
       autoplay: true,
       autoplaySpeed: 3000,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      arrows: false,
+      pauseOnFocus: false,
+      pauseOnHover: false
     });
   }
 

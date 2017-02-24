@@ -89,7 +89,6 @@ aside {
 
     .left-part {
       display: inline-block;
-      height: 50vh;
       color: #000000;
       padding-top: 43px;
       text-align: right;
@@ -132,9 +131,10 @@ aside {
       text-align: left;
       line-height: 2.1;
       z-index: 2;
+      animation-delay: 1s;
 
       p {
-        // animation-delay: 1s;
+        animation-delay: 1s;
       }
     }
   }
@@ -280,7 +280,9 @@ aside {
 .slick-slider {
   width: 37vw;
   max-height: 50vh;
+  margin-top: 30px;
   overflow: hidden;
+  animation-delay: 2s;
 
   &.two-img{
     float: left;
