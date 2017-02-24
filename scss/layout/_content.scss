@@ -118,7 +118,7 @@ aside {
       }
     }
 
-    .right-part {
+    .text {
       background-color: red;
       width: 703px;
       padding: 44px 64px 50px 64px;
@@ -131,10 +131,9 @@ aside {
       text-align: left;
       line-height: 2.1;
       z-index: 2;
-      animation-delay: 1s;
 
       p {
-        animation-delay: 1s;
+       // animation-delay: 1s;
       }
     }
   }
@@ -197,7 +196,7 @@ aside {
       }
     }
 
-    .left-part {
+    .text {
       background-color: red;
       width: 703px;
       padding: 44px 64px 43px 64px;
@@ -227,21 +226,22 @@ aside {
 }
 
 .container_co-worker-3 {
+  height: 100vh;
   .content {
-    width: 1020px;
+    width: 990px;
     margin: 0 auto;
     position: relative;
 
     .left-part {
       display: inline-block;
-      height: 100vh;
       width: 210px;
       color: #000000;
       padding-top: 43px;
       text-align: right;
 
       h2 {
-        width: 210px;
+        width: 220px;
+        margin-left: -10px;
         font-size: 44px;
         line-height: 1.1;
       }
@@ -257,7 +257,7 @@ aside {
       }
     }
 
-    .right-part {
+    .text {
       background-color: red;
       width: 703px;
       padding: 44px 64px 50px 64px;
@@ -277,22 +277,56 @@ aside {
   }
 }
 
-.slick-slider {
-  width: 37vw;
-  max-height: 50vh;
-  margin-top: 30px;
-  overflow: hidden;
-  animation-delay: 2s;
+.container_co-worker-1, .container_co-worker-3 {
+  .slick-slider {
+    width: 37vw;
+    max-height: 50vh;
+    margin-top: 30px;
+    overflow: hidden;
+    animation-delay: 2s;
 
-  &.two-img{
-    float: left;
+
+    &.two-img {
+      float: left;
+    }
+
+    &.one-img {
+      float: right;
+    }
+
+    img {
+      min-width: 100%;
+    }
   }
+}
 
-  &.one-img{
-    float: right;
+
+
+.container_co-worker-2 {
+  .slick-slider {
+    width: 37vw;
+    max-height: 50vh;
+    margin-top: 30px;
+    overflow: hidden;
+    animation-delay: 2s;
+
+
+    &.one-img {
+      float: left;
+    }
+
+    &.two-img {
+      float: right;
+    }
+
+    img {
+      min-width: 100%;
+    }
   }
+}
 
-  img {
-    min-width: 100%;
+.container_co-worker-3 {
+  .slick-slider {
+    margin-top: 60px;
   }
 }
