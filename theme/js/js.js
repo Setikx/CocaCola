@@ -9,6 +9,7 @@
     slickOneinit();
     blockPosToTop1();
     blockPosToTop2();
+    blockPosToTop3();
    // videoOffsetPos();
    // ScrollRevealinit()
   });
@@ -134,7 +135,7 @@
 
   function blockPosToTop2(){
     var $redBox = $(".container_co-worker-2 div.text"),
-        $sliderHeight = $('.container_co-worker-2 .inner').height()+$('.slick-slider.two-img').height()+30 - ($redBox.height()+94);
+        $sliderHeight = $('.container_co-worker-2 .content').height()+$('.slick-slider.two-img').height()+30 - ($redBox.height()+94);
 
     $(window).bind('scroll', function(){
       var $scrollTop = $("body").scrollTop();
@@ -147,6 +148,20 @@
     });
   }
 
+  function blockPosToTop3(){
+    var $redBox = $(".container_co-worker-3 div.text"),
+        $sliderHeight = $('.container_co-worker-3 .content').height()+$('.slick-slider.two-img').height()+30 - ($redBox.height()+94);
+
+    $(window).bind('scroll', function(){
+      var $scrollTop = $("body").scrollTop();
+
+      if($scrollTop> 3600){
+        $redBox.css('transform', "translateY("+$sliderHeight+")");
+      }else{
+        $redBox.css('top', '0');
+      }
+    });
+  }
 
 
 
