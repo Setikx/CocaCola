@@ -133,7 +133,6 @@ aside {
       animation-duration: 2s;
       animation-delay: 1s;
       @include transition( top 1s);
-      border-bottom: 1px solid red;
 
 
       p {
@@ -290,7 +289,7 @@ aside {
   .slick-slider {
     width: 37vw;
     max-height: 50vh;
-    margin-top: 30px;
+    padding-top: 30px;
     overflow: hidden;
     animation-delay: 2s;
 

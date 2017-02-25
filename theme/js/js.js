@@ -124,12 +124,11 @@ function blockPosToTop(){
     var $redBox = $(".container_co-worker-1 div.text");
 
     $(window).bind('scroll', function(){
-      var $scrollTop = $("body").scrollTop();
-
-        $redBox = $(".container_co-worker-1 div.text");
+      var $scrollTop = $("body").scrollTop(),
+      $sliderHeight = $('.container_co-worker-1 .inner').height()+$('.slick-slider.two-img').height()+30 - ($redBox.height()+94);
 
       if($scrollTop> 1200){
-        $redBox.css('top', '-100%');
+        $redBox.css('top', $sliderHeight);
       }else{
         $redBox.css('top', '0');
       }
