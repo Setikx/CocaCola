@@ -1,8 +1,4 @@
-/* <div class="co-workers-gallery">
-<div class="item-1 item"><img src="theme/images/tmp/co-worker-1_photo-1.jpg" alt="co-worker_1-photo_1"></div>
-<div class="item-2 item"><img src="theme/images/tmp/co-worker-1_photo-2.JPG" alt="co-worker_1-photo_2"></div>
-<div class="item-3 item"><img src="theme/images/tmp/co-worker-1_photo-3.JPG" alt="co-worker_1-photo_3"></div>
-</div> */
+
 
 html, body {
   height: 100%;
@@ -77,10 +73,12 @@ aside {
 .container_co-worker-1,
 .container_co-worker-2,
 .container_co-worker-3 {
-  @include translateY(100vh);
+ // @include translateY(100vh);
+  top:100vh;
 }
 
 .container_co-worker-1 {
+    margin-bottom: -5px;
 
   .content {
     width: 990px;
@@ -92,6 +90,7 @@ aside {
       color: #000000;
       padding-top: 43px;
       text-align: right;
+      animation-duration: 3s;
 
       h2 {
         width: 206px;
@@ -131,9 +130,11 @@ aside {
       text-align: left;
       line-height: 2.1;
       z-index: 2;
+      animation-duration: 2s;
+      animation-delay: 1s;
 
       p {
-       // animation-delay: 1s;
+       animation-delay: 1s;
       }
     }
   }
@@ -163,6 +164,7 @@ aside {
 
 .container_co-worker-2 {
   text-align: right;
+  margin-bottom: -5px;
 
   .content {
     width: 970px;
@@ -177,6 +179,7 @@ aside {
       padding-right: 27%;
       text-align: left;
       position: relative;
+      animation-duration: 3s;
 
       h2 {
         width: 420px;
@@ -208,9 +211,10 @@ aside {
       text-align: left;
       line-height: 1.96;
       z-index: 2;
+      animation-delay: 1s;
 
       .p {
-        // animation-delay: 1s;
+        animation-delay: 1s;
       }
     }
   }
@@ -238,6 +242,7 @@ aside {
       color: #000000;
       padding-top: 43px;
       text-align: right;
+      animation-duration: 3s;
 
       h2 {
         width: 220px;
@@ -269,9 +274,10 @@ aside {
       color: white;
       text-align: left;
       line-height: 2.0;
+      animation-delay: 1s;
 
       p {
-        // animation-delay: 1s;
+        animation-delay: 1s;
       }
     }
   }
@@ -329,4 +335,32 @@ aside {
   .slick-slider {
     margin-top: 60px;
   }
+}
+
+
+
+
+@keyframes positionBot {
+  0% {
+    top: 0;
+  }
+
+  100% {
+    top: -100%
+  }
+}
+
+@-webkit-keyframes positionBot {
+  0% {
+    top: 0;
+  }
+
+  100% {
+    top: -100%
+  }
+}
+
+.positionBot {
+  -webkit-animation-name: positionBot;
+  animation-name: positionBot;
 }

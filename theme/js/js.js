@@ -7,7 +7,7 @@
     WidthSliderinitTwo();
     slickTwoinit();
     slickOneinit();
-    ScrollRevealinit()
+   // ScrollRevealinit()
   });
 
   /*ANIMATION*/
@@ -105,8 +105,13 @@
   }
 
   function ScrollRevealinit() {
-    window.sr = ScrollReveal({reset: true});
-    sr.reveal('---');
+    window.sr = ScrollReveal({
+      reset: true
+
+    });
+    sr.reveal('.left-part');
+    sr.reveal('.right-part');
+    sr.reveal('.text');
   }
 
 })(jQuery);
