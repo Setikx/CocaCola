@@ -132,6 +132,9 @@ aside {
       z-index: 2;
       animation-duration: 2s;
       animation-delay: 1s;
+      @include transition( top 1s);
+      border-bottom: 1px solid red;
+
 
       p {
        animation-delay: 1s;
@@ -336,6 +339,7 @@ aside {
     margin-top: 60px;
   }
 }
+
 
 
 
