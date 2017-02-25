@@ -121,12 +121,23 @@
 function blockPosToTop(){
   $(document).ready(function () {
 
-    $(window).scroll(function () {
-      var bo = $("body").scrollTop();
-      if (bo > 1200) {
-        $(".container_co-worker-1 div.text").css('top', '-100%');
+   // $(window).scroll(function () {
+   //   var bo = $("body").scrollTop();
+   //   if (bo > 1200) {
+   //     $(".container_co-worker-1 div.text").css('top', '-100%');
+   //   }else{
+    //    $(".container_co-worker-1 div.text").css('top', '0');
+    //  }
+   // });
+
+    $(window).bind('scroll', function(){
+      var $scrollTop = $("body").scrollTop(),
+        $redBox = $(".container_co-worker-1 div.text");
+
+      if($scrollTop> 1200){
+        $redBox.css('top', '-100%');
       }else{
-        $(".container_co-worker-1 div.text").css('top', '0');
+        $redBox.css('top', '0');
       }
     })
   });
