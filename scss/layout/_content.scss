@@ -72,12 +72,13 @@ aside {
 .container_co-worker-1,
 .container_co-worker-2,
 .container_co-worker-3 {
- // @include translateY(100vh);
-  top:100vh;
+  // @include translateY(100vh);
+  top: 100vh;
 }
 
 .container_co-worker-1 {
-    margin-bottom: -5px;
+  margin-bottom: -5px;
+  overflow: hidden;
 
   .content {
     width: 990px;
@@ -107,7 +108,7 @@ aside {
         padding-left: 70px;
         line-height: 1.32;
         width: 206px;
-        @include transition( padding-left 1s);
+        @include transition(padding-left 1s);
 
         &.animating-end {
           padding-left: 0;
@@ -131,11 +132,10 @@ aside {
       z-index: 2;
       animation-duration: 2s;
       animation-delay: 1s;
-      @include transition( top 1s);
-
+      @include transition(top 1s);
 
       p {
-       animation-delay: 1s;
+        animation-delay: 1s;
       }
     }
   }
@@ -156,7 +156,14 @@ aside {
   }
 
   .video-1 {
-    width: 100%;
+    width: 100vw;
+
+    &.fixed-block {
+      position: fixed;
+      top: 0;
+      left: 96px;
+      right: 0;
+    }
   }
 }
 
@@ -209,6 +216,7 @@ aside {
       text-align: left;
       line-height: 1.96;
       z-index: 2;
+      @include transition(top 1s);
       animation-delay: 1s;
 
       .p {
@@ -289,7 +297,6 @@ aside {
     overflow: hidden;
     animation-delay: 2s;
 
-
     &.two-img {
       float: left;
     }
@@ -304,8 +311,6 @@ aside {
   }
 }
 
-
-
 .container_co-worker-2 {
   .slick-slider {
     width: 37vw;
@@ -313,7 +318,6 @@ aside {
     margin-top: 30px;
     overflow: hidden;
     animation-delay: 2s;
-
 
     &.one-img {
       float: left;
@@ -334,10 +338,6 @@ aside {
     margin-top: 60px;
   }
 }
-
-
-
-
 
 @keyframes positionBot {
   0% {

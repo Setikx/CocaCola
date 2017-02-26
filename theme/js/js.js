@@ -10,7 +10,7 @@
     blockPosToTop1();
     blockPosToTop2();
     blockPosToTop3();
-   // videoOffsetPos();
+    videoOffsetPos();
    // ScrollRevealinit()
   });
 
@@ -120,13 +120,13 @@
 
   function blockPosToTop1(){
     var $redBox = $(".container_co-worker-1 div.text"),
-        $sliderHeight = $('.container_co-worker-1 .inner').height()+$('.slick-slider.two-img').height()+30 - ($redBox.height()+94);
+        $sliderHeight = $('.container_co-worker-1 .inner').height()+$('.slick-slider.two-img').height() - ($redBox.height()+127);
 
     $(window).bind('scroll', function(){
       var $scrollTop = $("body").scrollTop();
 
       if($scrollTop> 1200){
-        $redBox.css('transform', "translateY("+$sliderHeight+")");
+        $redBox.css('top', $sliderHeight);
       }else{
         $redBox.css('top', '0');
       }
@@ -135,13 +135,13 @@
 
   function blockPosToTop2(){
     var $redBox = $(".container_co-worker-2 div.text"),
-        $sliderHeight = $('.container_co-worker-2 .content').height()+$('.slick-slider.two-img').height()+30 - ($redBox.height()+94);
+        $sliderHeight = $('.container_co-worker-2 .content').height()+$('.slick-slider.two-img').height()+30 - ($redBox.height()+57);
 
     $(window).bind('scroll', function(){
       var $scrollTop = $("body").scrollTop();
 
-      if($scrollTop> 2400){
-        $redBox.css('transform', "translateY("+$sliderHeight+")");
+      if($scrollTop> 2900){
+        $redBox.css('top', $sliderHeight);
       }else{
         $redBox.css('top', '0');
       }
@@ -163,26 +163,21 @@
     });
   }
 
-
-
-
-
-
-
   function videoOffsetPos () {
-    var $vid = $(".video-1");
+    var $vid = $(".video-1"),
+      $content = $('.container_co-worker-1'),
+      $contetnHeight = $content.height(),
     $rangeToVid = $('.container_co-worker-1 .inner').height()+$('.slick-slider.two-img').height()+$('.top-container').height();
 
-    $(window).bind('scroll', function(){
+    $(window).bind('scroll resize', function(){
       var $scrollTop = $("body").scrollTop();
+      $content.height($contetnHeight);
+
       if ($scrollTop >= $rangeToVid) {
-        $vid.css('transform', "translateY("+$rangeToVid - $('.top-container').height()+")");
-        $vid.css('position', 'fixed');
+        $vid.addClass('fixed-block');
 
-      }
-
-      else {
-        $vid.css('position', 'static');
+      } else {
+        $vid.removeClass('fixed-block');
       }
     });
   }
