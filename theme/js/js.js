@@ -11,7 +11,6 @@
     blockPosToTop2();
     blockPosToTop3();
     videoOffsetPos();
-   // ScrollRevealinit()
   });
 
   /*ANIMATION*/
@@ -108,15 +107,6 @@
     });
   }
 
-  function ScrollRevealinit() {
-    window.sr = ScrollReveal({
-      reset: true
-
-    });
-    sr.reveal('.left-part');
-    sr.reveal('.right-part');
-    sr.reveal('.text');
-  }
 
   function blockPosToTop1(){
     var $redBox = $(".container_co-worker-1 div.text"),

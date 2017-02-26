@@ -241,6 +241,7 @@ aside {
     width: 990px;
     margin: 0 auto;
     position: relative;
+    height: 100vh;
 
     .left-part {
       display: inline-block;
@@ -273,7 +274,7 @@ aside {
       width: 703px;
       padding: 44px 64px 50px 64px;
       position: absolute;
-      top: 0;
+      bottom: 0;
       left: 295px;
       margin: 0;
       font-size: 20px;
@@ -336,30 +337,15 @@ aside {
 .container_co-worker-3 {
   .slick-slider {
     margin-top: 60px;
-  }
-}
+    position: absolute;
+    bottom: 0;
 
-@keyframes positionBot {
-  0% {
-    top: 0;
-  }
+    &.one-img {
+      right: 0;
+    }
 
-  100% {
-    top: -100%
+    &.two-img {
+      left: 0;
+    }
   }
-}
-
-@-webkit-keyframes positionBot {
-  0% {
-    top: 0;
-  }
-
-  100% {
-    top: -100%
-  }
-}
-
-.positionBot {
-  -webkit-animation-name: positionBot;
-  animation-name: positionBot;
 }
